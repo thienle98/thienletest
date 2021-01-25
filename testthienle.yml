@@ -14,8 +14,8 @@
      - { number: 3}
    - name: show
      ios_command:
-      commands:
-       - show ip int br
+       commands:
+         - show ip int br
      register: show_ip
      
-    - debug: var=show_ip.stdout_lines
+   - debug: var=show_ip.stdout_lines
