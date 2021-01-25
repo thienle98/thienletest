@@ -13,4 +13,4 @@
      - { number: 2}
      - { number: 3}
         
-   - debug: var=show_ip.stdout_lines
+   
