@@ -6,9 +6,9 @@
   tasks:
   - name: test tao loopback
     ios_l3_interface:
-     name: {{ item.name}}
-     ipv4: {{item.ip}}
+     name: loopback {{ item.number }}
+     ipv4: 10.0.{{ item.number }}.1/24
     with_items:
-     - { name: loopback 1, ip: 10.0.2.1/24}
-     - { name: loopback 2, ip: 10.0.2.2/24}
-     - { name: loopback 3, ip: 10.0.2.3/24}
+     - { number: 1}
+     - { number: 2}
+     - { number: 3}
